@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+body {
+  background-color: var(--bg-color);
+  /*background-color: #fff;*/
+  color: var(--text-color);
+}
+
+body.dark {
+  --bg-color: rgb(43, 43, 43); /* almost black */
+  /*background-color: rgb(56, 56, 56);*/
+  --text-color: white;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  border-bottom-color: #cacaca;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.header-inner {
+  max-width: 1000px;
+  height: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: rgb(255, 255, 255);*/
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.userName {
+  font-size: 26px;
+  font-weight: bolder;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.nav {
+  display: flex;
+  padding-top: 10px;
+}
+
+.main {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: rgb(255, 255, 255);*/
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mailbox {
+  font-size: 23px;
+  font-weight: bolder;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.mail {
+  display: flex;
+  /*background-color: #ffffff;*/
+  margin: 0px;
+  padding: 10px;
+  border-color: #e4e3e3;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.sender {
+  /*background-color: rgb(255, 255, 255);*/
+  max-width: 220px;
+  width: 220px;
+  font-weight: bolder;
+}
+
+.loginText {
+  margin-top: 10px;
+  max-width: 400px;
+  width: 400px;
+  font-weight: lighter;
+}
+
+.buttonInactive {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  border-color: rgb(119, 97, 199);
+  border-style: solid;
+  border-width: 2px;
+  margin-right: 5px;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: rgb(119, 97, 199);
+}
+
+.buttonActive {
+  font-size: 16px;
+  color: rgb(111, 82, 214);
+  border-color: rgb(119, 97, 199);
+  border-style: solid;
+  border-width: 2px;
+  margin-right: 5px;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.mailDetail {
+  padding-top: 20px;
+}
+
+.mailDetail .subject {
+  font-size: 20px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
+.mailDetail .senderInfo {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.mailDetail .sender {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.mailDetail .timestamp {
+  font-size: 13px;
+}
+
+.mailDetail .body {
+  font-size: 20 px;
+  padding-bottom: 15px;
+}
+
+.form-textinput {
+  font-size: 16 px;
+  width: 350px;
+  line-height: 24px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+.form-textarea {
+  font-size: 16 px;
+  width: 350px;
+  height: 300px;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
